@@ -1,0 +1,179 @@
+* {
+  font-size: 20;
+}
+
+.container {
+  display: flex;
+  margin: 30px 30px 30px 30px;
+  border-radius: 20px;
+  border: 5px black solid;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo-title {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bottum-text {
+  color: rgb(142, 135, 142);
+  font-size: 12px;
+  padding: 20px;
+}
+
+.forgot {
+  color: red;
+  width: 200px;
+}
+
+.button {
+  padding: 10px 20px 10px 20px;
+  border: 1px green solid;
+  background-color: white;
+  color: green;
+  border-radius: 4px;
+}
+
+.username1,
+.password1 {
+  padding: 8px 5px 8px 5px;
+  width: 60%;
+  height: 15px;
+  border-radius: 5px;
+  border: 1px green solid;
+}
+
+.left-window {
+  flex: 1;
+  margin: 30px 0px 20px 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+body {
+  background-color: rgb(234, 197, 129);
+}
+
+.rememb-forgot {
+  display: flex;
+  column-gap: 20%;
+}
+
+.welcome-text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.logo {
+  background-color: white;
+}
+
+.right-window {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.circle1 {
+
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-name: anim1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.circle2 {
+  width: 75px;
+  height: 75px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-name: anim1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.circle3 {
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-delay: -2s;
+  animation-name: anim1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-name: anim1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.circle5 {
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+  animation-name: anim1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.circle6 {
+  width: 60px;
+  height: 60px;
+  border: 2px black solid;
+  border-radius: 50%;
+  animation-delay: -3s;
+  animation-name: anim1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(0px) ;
+    background-color: aliceblue;
+  }
+  to {
+    transform: translateY(600px) ;
+    background-color: aqua;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left-window {
+    text-align: center;
+  }
+  .rememb-forgot,
+  .password1,
+  .username1 {
+    align-self: center;
+    font-size: 0.9rem;
+  }
+
+  .right-window {
+    display: none;
+  }
+}
